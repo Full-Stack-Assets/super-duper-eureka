@@ -1,0 +1,24 @@
+# HostGraph frontend implementation todo
+
+- [ ] Verify installed frontend dependencies and add any missing packages required for routing and charts
+- [ ] Finalize `client/src/data/mockData.ts` with comprehensive fallback data for all six views
+- [ ] Finalize `client/src/services/api.ts` with fetch wrappers for all required `/api/v1` endpoints
+- [ ] Finalize `client/src/hooks/useFetch.ts` with loading, error, fallback, and dependency handling
+- [ ] Build a dark command-center layout with sidebar navigation and shared dashboard primitives
+- [ ] Configure routed navigation in `client/src/App.tsx`
+- [ ] Implement the Dashboard page with API-backed summary data and mock fallback
+- [ ] Implement the Margin Gap page with filters, benchmark overlay, and drill-down fallback behavior
+- [ ] Implement the Reorder page with reorder suggestions and inventory status fallback behavior
+- [ ] Implement the Vendors page with scorecard and price trend fallback behavior
+- [ ] Implement the Shrinkage page with yield variance and location comparison fallback behavior
+- [ ] Implement the Alerts page with severity feed and fallback behavior
+- [ ] Confirm `vite.config.ts` proxies `/api` to `http://localhost:3000`
+- [ ] Update `README.md` for backend-connected and standalone mock-data usage
+- [ ] Run typecheck and production build, fix remaining issues, and confirm the dev server starts cleanly
+- [ ] Sync Margin Gap filter state with URL search parameters so views are shareable and reload-stable
+- [ ] Add a drag-and-drop invoice upload panel wired to `/api/v1/invoices/upload` with loading and error states
+- [ ] Lazy-load chart-heavy routes and shared page modules to reduce the production JavaScript payload
+- [ ] Add persisted saved filter presets for operators on the Margin Gap workflow
+- [ ] Add a dedicated ingestion queue showing invoice upload history and parsing status
+- [ ] Strengthen live API integration so the dashboard presents backend-driven states wherever available
+- [ ] Add route-level prefetching for common navigation paths to improve perceived performance
