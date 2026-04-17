@@ -13,7 +13,7 @@ app.use(express.static(staticPath));
 
 app.get("*", (_req, res) => {
   if (!indexHtml) {
-    res.status(503).json({ error: "Static bundle is unavailable." });
+    res.status(500).json({ error: "Static bundle is unavailable." });
     return;
   }
 
